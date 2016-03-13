@@ -12,7 +12,7 @@ npm install --save videojs-ppc-plugin
 ``` 
 
 ## Demo
-Using this 3 commands you should be set up to check the plugin working :-)
+Using this couple of commands you should be set up to check the plugin working :-)
 
 ```sh
 npm npm run-script build 
