@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>videojs-ppc-v4-plugin Demo</title>
+  <link href="/node_modules/videojs/dist/video-js/video-js.css" rel="stylesheet">
+  <link href="/dist/videojs-ppc-v4-plugin.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <video id="videojs-ppc-v4-plugin-player" class="video-js vjs-default-skin" controls>
+      <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4'>
+      <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/webm'>
+    </video>
+    <div  class="box" id="videoNotifications">
+      <div id="start"></div>
+      <div id="actions"></div>
+      <div id="end"></div>
+      <div class="counter">
+        <p>
+          Number of pauses: <span id="pauseCounter"></span><br />
+          Number of times the video was resumed: <span id="playCounter"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <ul>
+    <li><a href="/test/">Run unit tests in browser.</a></li>
+    <li><a href="/docs/api/">Read generated docs.</a></li>
+  </ul>
+  <script src="/node_modules/videojs/dist/video-js/video.js"></script>
+  <script src="/dist/videojs-ppc-v4-plugin.js"></script>
+  <script>
+    (function(window, videojs) {
+      var player = window.player = videojs('videojs-ppc-v4-plugin-player');
+      player.ppcV4Plugin();
+    }(window, window.videojs));
+  </script>
+</body>
+</html>
