@@ -1,6 +1,6 @@
 # videojs-ppc-v4-plugin
 
-Plugin to count pauses and resumes during a video and make an http call to register them
+Plugin to count pauses and resumes during a video and make an http call to register them to distinguish streaming point
 
 ## Table of Contents
 
